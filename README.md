@@ -99,14 +99,14 @@ SSH into the control node and follow the steps below:
     - Scroll to line #1106 and replace the IP address with the IP address of your ELK machine.
         
         - output.elasticsearch:
-          hosts: ["<your_Elks_IP>:9200"]
-          username: "elastic"
-          password: "changeme"
+        - hosts: ["<your_Elks_IP>:9200"]
+        - username: "elastic"
+        - password: "changeme"
 
     - Scroll to line #1806 and replace the IP address with the IP address of your ELK machine.
         
         - setup.kibana:
-          host: "<your_Elks_IP>:5601"
+        - host: "<your_Elks_IP>:5601"
 
 - Run the playbook, (run the command "ansible-playbook filebeat-config.yml") and navigate to http://<Your_Elks_Private_IP>:5601/app/kibana#/home/tutorial/systemLogs to check that the installation worked as expected. scroll down to click "check data"
 
