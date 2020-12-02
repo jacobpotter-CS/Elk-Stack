@@ -97,12 +97,14 @@ SSH into the control node and follow the steps below:
     - run the command "nano /etc/ansible/file/filebeat-config.yml"
 
     - Scroll to line #1106 and replace the IP address with the IP address of your ELK machine.
+        
         output.elasticsearch:
         hosts: ["<your_Elks_IP>:9200"]
         username: "elastic"
         password: "changeme"
 
     - Scroll to line #1806 and replace the IP address with the IP address of your ELK machine.
+        
         setup.kibana:
         host: "<your_Elks_IP>:5601"
 
